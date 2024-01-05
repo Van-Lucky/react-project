@@ -17,6 +17,12 @@ code {
     monospace; */
 }
 
+.header-title {
+  font-weight: bold! important;
+  font-family: Arial;
+  font-size: 25px;
+}
+
 
 /* ======== Navbar ======== */
 @media (max-width: 768px) {

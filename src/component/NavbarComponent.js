@@ -14,8 +14,14 @@ function Header()  {
         <>
             <header className='head w-full flex justify-center items-center fixed top-0 shadow bg-gray-50 font-semibold text-gray-700 z-50 overflow-hidden border-t border-yellow-500'>
                 <div className='head-item w-[1280px] flex items-center justify-between  gap-2 px-8 py-2'>
-                    <div className="w-full">
-                        <Link to={"/"} ><img src={logo} className="w-16"/></Link>
+                    <div className="w-full flex items-center">
+                        <div className="">
+                        <Link to={"/"} ><img src={logo} className="w-16"/></Link> 
+                        </div>
+                        
+                       <div>
+                            <h3 className="header-title">Care Clinic</h3>
+                       </div>
                     </div>
 
                     <div id='mySidepanel' className='menu'>
@@ -26,8 +32,6 @@ function Header()  {
                             <Link className="link link-underline py-1.5" to={'/Appointment'}>APPOINTMENT</Link>
 
                             <Link className="link link-underline py-1.5" to={'/Blog'}>INVOICE</Link>
-
-                            <Link className="link link-underline py-1.5" to={'/Project'}>PROFILE</Link>
 
                             <div className="">
                                 <Link className="px-6 py-1 shadow border border-green-400 rounded-full hover:bg-yellow-500 hover:border-gray-500 duration-500" to={'/Login'}>LOGIN</Link>
