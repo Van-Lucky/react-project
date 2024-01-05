@@ -40,34 +40,32 @@ class Login extends React.Component {
         }
 
         return (
-            <header className="App-header">
+            <header className="App-header mt-10">
                 <div className='w-full w-8/12 lg:w-5/12'>
                     <div className='flex justify-center'>
                         <div className='bg-gray-200 rounded-lg w-11/12 md:w-10/12 lg:w-8/12'>
                             <div className='relative'>
-                                <span className='absolute right-0 left-0 top-16 text-center'>
-                                    {/* Welcome Login Form */}
-                                </span>
                                 <img src={siginbg} className="rounded-t-md" alt="logo"/>
                             </div>
                             <span className='mt-6 text-2xl text-gray-600 tracking-wider block text-center'>USER LOGIN</span>
-                            <form onSubmit={this.handleLogin} className='flex gap-5 flex-col px-4 lg:px-16 py-6'>
+
+                            <form onSubmit={this.handleLogin} className='flex gap-5 flex-col px-4 lg:px-10 py-6'>
                                 <div className='relative'>
-                                    <input name="username" value={username} onChange={this.handleInputChange} className='w-full border rounded-full text-[15px] xl:text-[18px] py-2 px-14 bg-gray-600 focus:outline-none focus:ring-primary-300' type='text' placeholder='Username' required />
-                                    <div className='absolute left-4 top-1.5 md:top-3.5 text-[28px]'> 
+                                    <input name="username" value={username} onChange={this.handleInputChange} className='w-full border rounded-full text-[13px] xl:text-[15px] py-3 px-10 bg-gray-600 focus:outline-none focus:ring-primary-300' type='text' placeholder='Username' required />
+                                    <div className='absolute left-4 top-1.5 md:top-3.5 text-[20px]'> 
                                         <GoPasskeyFill />
                                     </div>
                                 </div>
         
                                 <div className='relative'>
-                                    <input name="password" value={password} onChange={this.handleInputChange} className='w-full border rounded-full text-[15px] xl:text-[18px] py-2 px-14 bg-gray-600 focus:outline-none focus:ring-primary-300' type='password' placeholder='Password' required />
-                                    <div className='absolute left-4 top-1.5 md:top-3.5 text-[28px]'>
+                                    <input name="password" value={password} onChange={this.handleInputChange} className='w-full border rounded-full text-[13px] xl:text-[15px] py-3 px-10 bg-gray-600 focus:outline-none focus:ring-primary-300' type='password' placeholder='Password' required />
+                                    <div className='absolute left-4 top-1.5 md:top-3.5 text-[20px]'>
                                         <SiKeepassxc />
                                     </div>
                                 </div>
         
                                 <div className='flex justify-between px-1'>
-                                    <button className='text-[13px] text-gray-600 hover:text-gray-800 duration-20'>Remember</button>
+                                    <button className='text-[13px] text-gray-600 hover:text-gray-800 duration-20'>Register</button>
                                     <button className='text-[13px] text-gray-600 hover:text-gray-800 duration-300'>Forgot Password?</button>
                                 </div>
 

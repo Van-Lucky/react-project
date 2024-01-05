@@ -35,7 +35,7 @@ function Home() {
                         </div>
 
                         <div className="grid grid-cols-2 gap-4 text-xs sm:text-sm font-bold text-gray-600">
-                            <div className="py-2 sm:py-3 tracking-wide cursor-pointer px-4 sm:px-6 border border-green-700 shadow bg-yellow-500 rounded hover:bg-green-400 duration-300 text-center">BOOK APP</div>
+                            <Link className="py-2 sm:py-3 tracking-wide cursor-pointer px-4 sm:px-6 border border-green-700 shadow bg-yellow-500 rounded hover:bg-green-400 duration-300 text-center" to={'./Book'}>BOOK APPOINMENT</Link>
 
                             <div className="py-2 sm:py-3 tracking-wide cursor-pointer px-4 sm:px-6 border border-green-700 shadow rounded hover:bg-green-400 duration-300 text-center">ONLINE CONSULTANT</div>
 

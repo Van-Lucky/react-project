@@ -9,6 +9,7 @@ import Detail from './component/DetailComponent';
 import Blog from './component/BlogComponent';
 import Contact from './component/ContactComponent';
 import Login from './component/LoginComponent';
+import Book from './component/BookComponent';
 
 function App() {
   useEffect(() => {
@@ -27,6 +28,7 @@ function App() {
           <Route path="/Blog" component={Blog} />
           <Route path="/Contact" component={Contact} />
           <Route path="/Login" component={Login} />
+          <Route path="/Book" component={Book} />
         </Switch>
     </>
   );

@@ -23,7 +23,7 @@ function Header()  {
                             <Link className="link link-underline py-1.5" to={'/'}>HOME</Link>
                             <Link className="link link-underline py-1.5" to={'/Doctor'}>DOCTOR</Link>
 
-                            <Link className="link link-underline py-1.5" to={'/Service'}>APPOINTMENT</Link>
+                            <Link className="link link-underline py-1.5" to={'/Appointment'}>APPOINTMENT</Link>
 
                             <Link className="link link-underline py-1.5" to={'/Blog'}>INVOICE</Link>
 
