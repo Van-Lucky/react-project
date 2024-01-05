@@ -1,6 +1,6 @@
 import React from "react";
 import { Redirect } from "react-router-dom";
-import siginbg from '../images/SignBG.png';
+import siginbg from '../images/banner-login.png';
 import { SiKeepassxc } from "react-icons/si";
 import { GoPasskeyFill } from "react-icons/go";
 
@@ -45,7 +45,9 @@ class Login extends React.Component {
                     <div className='flex justify-center'>
                         <div className='bg-gray-200 rounded-lg w-11/12 md:w-10/12 lg:w-8/12'>
                             <div className='relative'>
-                                <span className='absolute right-0 left-0 top-16 text-center'>Welcome Login Form</span>
+                                <span className='absolute right-0 left-0 top-16 text-center'>
+                                    {/* Welcome Login Form */}
+                                </span>
                                 <img src={siginbg} className="rounded-t-md" alt="logo"/>
                             </div>
                             <span className='mt-6 text-2xl text-gray-600 tracking-wider block text-center'>USER LOGIN</span>
@@ -65,8 +67,8 @@ class Login extends React.Component {
                                 </div>
         
                                 <div className='flex justify-between px-1'>
-                                    <button className='text-[20px] text-gray-600 hover:text-gray-800 duration-300'>Remember</button>
-                                    <button className='text-[20px] text-gray-600 hover:text-gray-800 duration-300'>Forgot Password?</button>
+                                    <button className='text-[13px] text-gray-600 hover:text-gray-800 duration-20'>Remember</button>
+                                    <button className='text-[13px] text-gray-600 hover:text-gray-800 duration-300'>Forgot Password?</button>
                                 </div>
 
                                 <div className='flex justify-center items-center'>
