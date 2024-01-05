@@ -1,5 +1,5 @@
-import logo from './logo.svg';
-import {Routes,Route } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Home from './Home/Home';
 import Navbar from './component/NavbarComponent';
@@ -11,18 +11,23 @@ import Contact from './component/ContactComponent';
 import Login from './component/LoginComponent';
 
 function App() {
+  useEffect(() => {
+    // Perform update or any other actions when the page is loaded
+    // You can add your code here
+  }, []);
+
   return (
     <>
       <Navbar />
-      <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/Doctor' element={<Doctor />} />
-          <Route path='/Appointment' element={<Appointment />} />
-          <Route path='/Detail' element={<Detail />} />
-          <Route path='/Blog' element={<Blog />} />
-          <Route path='/Contact' element={<Contact />} />
-          <Route path='/Login' element={<Login />} />
-      </Routes>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/Doctor" component={Doctor} />
+          <Route path="/Appointment" component={Appointment} />
+          <Route path="/Detail" component={Detail} />
+          <Route path="/Blog" component={Blog} />
+          <Route path="/Contact" component={Contact} />
+          <Route path="/Login" component={Login} />
+        </Switch>
     </>
   );
 }

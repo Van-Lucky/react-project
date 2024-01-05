@@ -2,7 +2,7 @@ import React from "react";
 // import React,{useState} from "react";
 
 import { Link } from 'react-router-dom'
-import logo from '../images/logo2.png'
+import logo from '../images/hospital.png'
 import { FcSearch } from "react-icons/fc";
 import {Divide as Hamburger} from 'hamburger-react'
 
